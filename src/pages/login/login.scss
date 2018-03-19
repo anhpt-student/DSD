@@ -1,0 +1,11 @@
+page-login {
+    .loginBackground{
+        background-color: rgb(72, 214, 72);
+        color: white ;
+    }
+
+    .text-login{
+        @extend %bound-center;
+        font-size: 10vh !important;
+    }
+}

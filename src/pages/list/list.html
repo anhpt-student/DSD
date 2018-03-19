@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar color="navbar">
+    <ion-title>
+      Danh sách cây
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let item of listTree" (click)="goDetail(item.sequenceId)">
+    <ion-card-header>
+      <h6>Cây số: {{item.sequenceId}} </h6>
+    </ion-card-header>
+    <ion-card-content>
+      <p> Vị trí: {{item.location}}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
